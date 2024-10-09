@@ -112,12 +112,14 @@ function esVocal(letra) {
 
 // Ejercicio 10: Condicionales complejos
 function evaluarNumeros(a, b, c) {
-    if (a > 0 && b > 0 && c > 0) {
-        console.log("Todos son positivos");
-    } else if (a < 0 || b < 0 || c < 0) {
-        console.log("Al menos uno es negativo");
+    if (a < 0 || b < 0 || c < 0){
+        if (a < 0 && b < 0 && c < 0){
+            console.log("Todos negativos.")
+        } else{
+            console.log("Almenos uno es negativo.")
+        }
     } else {
-        console.log("Todos son negativos");
+        console.log("Todos positivos")
     }
 }
 
